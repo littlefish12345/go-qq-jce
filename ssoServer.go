@@ -21,16 +21,3 @@ type SsoServerInfoStruct struct {
 	Port     int32  `jceId:"2"`
 	Location string `jceId:"8"`
 }
-
-type SsoServerRequestPacketStruct struct {
-	Version     int16             `jceId:"1"`
-	PkgType     byte              `jceId:"2"`
-	MsgType     int32             `jceId:"3"`
-	ReqId       int32             `jceId:"4"`
-	ServantName string            `jceId:"5"`
-	FuncName    string            `jceId:"6"`
-	Buffer      []byte            `jceId:"7"`
-	Timeout     int32             `jceId:"8"`
-	Context     map[string]string `jceId:"9"`
-	Status      map[string]string `jceId:"10"`
-}
