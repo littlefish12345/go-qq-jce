@@ -21,3 +21,16 @@ type FriendListRequest struct {
 	D6BRequest      []byte  `jceId:"17"`
 	SnsTypeList     []int64 `jceId:"18"`
 }
+
+type FriendInfoStruct struct {
+	FriendUin   int64  `jceId:"0"`
+	GroupId     byte   `jceId:"1"`
+	FaceId      int16  `jceId:"2"`
+	Remark      string `jceId:"3"`
+	Status      byte   `jceId:"5"`
+	Level       byte   `jceId:"6"`
+	NickName    string `jceId:"14"`
+	Network     byte   `jceId:"20"`
+	NetworkType int32  `jceId:"24"`
+	CardId      []byte `jceId:"41"`
+}
